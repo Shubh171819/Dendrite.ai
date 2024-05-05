@@ -1,21 +1,31 @@
 {
-  "name": "dendrite",
+  "name": "react_application",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.3",
+    "firebase": "^10.11.1",
+    "keycloak-js": "^24.0.3",
+    "konva": "^9.3.6",
+    "randomatic": "^3.1.1",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-color-palette": "^7.1.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "react-icons": "^5.2.0",
+    "react-konva": "^18.2.10",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "init-keycloak": "docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.5 start-dev"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "source-map-loader": "^5.0.0"
   }
 }

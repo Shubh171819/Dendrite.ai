@@ -1,0 +1,9 @@
+.userItem {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
